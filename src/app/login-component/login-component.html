@@ -1,0 +1,18 @@
+    <header id="loginheader">
+           <h3>Welcome to the Client Management Site!</h3>
+    </header>
+    <main id="loginmain">
+        <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+            <label for="username">UserName:</label>
+            <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Enter username" required minlength="3"><br>
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Enter password" required minlength="6"><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+    <footer id="loginfooter">
+                <p>&copy; 2025 ManSoft Inc.</p>
+    </footer>

@@ -1,0 +1,18 @@
+    <form #registoreForm="ngForm" (ngSubmit)="onSubmit(registoreForm)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" [(ngModel)]="name" name="name" placeholder="Enter clientname" required ><br> <br>
+
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" [(ngModel)]="email" name="email" placeholder="Enter email" required ><br> <br>
+
+            <label for="address">Address: </label><br>
+            <input type="text" id="address" [(ngModel)]="address" name="address" placeholder="Enter Address" required ><br> <br>
+
+            <label for="regPassword">Password: </label><br>
+            <input type="password" id="regPassword" [(ngModel)]="regPassword" name="regPassword" placeholder="Enter Password" required ><br> <br>
+
+            <label for="repassword">Repeat Password: </label><br>
+            <input type="password" id="repassword" [(ngModel)]="repassword" name="repassword" placeholder="Repeat Password" required ><br> <br>
+
+            <button type="submit">Register</button>
+    </form>

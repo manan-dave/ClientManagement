@@ -1,0 +1,20 @@
+<h2>Registered Clients</h2>
+<table border="1">
+  <thead>
+
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Created On</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let client of clients">
+    <td>{{ client.name }}</td>
+    <td>{{ client.address }}</td>
+    <td>{{ client.email }}</td>
+    <td>{{ client.created_at|date:'MM/dd/yyyy'}}</td>
+  </tr>
+  </tbody>
+</table>
